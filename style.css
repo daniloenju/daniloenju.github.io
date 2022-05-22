@@ -1,0 +1,143 @@
+:root
+{
+  --bg-color: #353436;
+  --footer-color: #4B5358;
+  --main-text-color: #CFBFA5;
+  --box-color: #444444;
+
+  --font-menu: 20px;
+  --font-label: 24px;
+  --font-footer: 14px;
+}
+
+@keyframes float
+{
+  from {margin-top: 10px;}
+  to {margin-top: 0px;}
+}
+
+body
+{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-label);
+  color: var(--main-text-color);
+  background: var(--bg-color);
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+div
+{
+ margin: 10px;
+ text-align: center;
+ justify-content: center;
+}
+
+img
+{
+    margin: auto;
+}
+
+.top-bar
+{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: var(--font-menu);
+  justify-content: center;
+}
+.wrapper-max-width
+{
+  width: 100%;
+  max-width: 1260px;
+  display: flex;
+  flex-direction: row;
+}
+.top-bar-left
+{
+  margin: auto auto auto 0;
+  justify-content: left;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.top-bar-right
+{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  text-align: right;
+}
+
+a:link{
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-menu);
+  color: var(--main-text-color);
+  background: var(--bg-color);
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover{
+  background: var(--footer-color);
+  text-decoration: none;
+}
+
+.avatar
+{
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  max-width: 100%;
+  justify-content: center;
+
+/*
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  */
+
+}
+
+.squareTitle
+{
+  width: 500px;
+}
+
+.propertyBox
+{
+  margin: auto;
+  width: 380px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: var(--font-label);
+  background: var(--box-color);
+}
+
+.footer
+{
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  background: var(--footer-color);
+  font-size: var(--font-footer);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
