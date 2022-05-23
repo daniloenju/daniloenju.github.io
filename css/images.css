@@ -1,0 +1,55 @@
+img
+{
+    margin: auto;
+}
+
+.topSnow{
+  background-image: url("../img/TopSnow.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 75px;
+  margin: 0;
+}
+
+.bottomSnow{
+  background-image: url("../img/bottomSnow.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 75px;
+  margin: 0;
+}
+
+.bg1 { 
+  background-image: url("../img/example.png");
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.particle { 
+  position: absolute;
+  width: 100%;
+  height: 600px; 
+}
+
+.bg2 { 
+  background-color: var(--bg-color);
+  min-height: 300px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg3 { 
+  background-image: url("../img/Example2.png");
+  min-height: 300px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -3,21 +3,20 @@
 
 <head>
   <Title>Danilo Enju</Title>
-  <link rel="stylesheet" href="output/css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/images.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-
 </head>
 
 </html>
 
 <body>
-
   <nav class="top-bar">
     <div class="wrapper-max-width">
       <div class="top-bar-left">
@@ -25,30 +24,52 @@
       </div>
       <ul class="top-bar-right">
         <li><a href="//">Home</a></li>
-        <li><a href="//">UI Design</a></li>
-        <li><a href="//">Projects</a></li>
+        <li><a href="//">User Interface</a></li>
+        <li><a href="//">Pixel Art</a></li>
         <li><a href="//">Resume</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="avatar">
-    <img src="output/img/ColdSnap.svg" alt="Logo" />
-  </div>
-  <div>UI Design Portfolio</div>
-  <div class="section_container">
-    <div class="section_title">
-      <div class="square" />
-      <div class="squareTitle">Danilo Enju</div>
-      <div class="square" />
-    </div>
-    <div class="avatar"><img src="output/img/Idle.gif" alt="Avatar Image" /></div>
-    <div class="propertyBox">UI Designer</div>
-    <div class="propertyBox">Team Player</div>
-    <div class="propertyBox">Weak Against Undead</div>
 
+  <div class="bg1">
+    <div class="particle" id="particles-js"></div>
+      <img class="logo" src="img/Logo.png" alt="Logo" />
+    
   </div>
-  <div class="footer">2020 | Danilo Enju | All content and trademarks are property of their respective owners.</div>
+
+  <div class="bg2">
+    <div class="topSnow"></div>
+      <div class="avatar"><img src="img/Idle.gif" alt="Avatar Image" /></div>
+      <div class="propertyBox">User Interface</div>
+      <div class="propertyBox">Pixel Art</div>
+      <div class="propertyBox">Programming</div>
+  </div>
+
+  <div class="bg3">
+    <div class="bottomSnow"></div>
+    <img class="avatar" src="img/placeholder.png" alt="Logo" />
+  </div>
+
+
+<!-- Trigger the Modal -->
+  <img id="myImg" src="img/placeholder.png" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+  <div class="footer">2022 | Danilo Enju | All content and trademarks are property of their respective owners.</div>
 </body>
-
+<script src="js/modal.js"></script>
+<script src="particles.js-master/particles.js"></script>
+<script src="particles.js-master/demo/js/app.js"></script>
 </html>
