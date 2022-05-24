@@ -3,8 +3,12 @@
   width: 220px;
   height: 120px;
   border-radius: 5px;
+  border-width: 2px;
+  border-color: var(--main-text-color);
+  border-style: solid;
   cursor: pointer;
   transition: 0.3s;
+  margin: auto;
 }
 
 .modaltrigger:hover 

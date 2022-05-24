@@ -4,9 +4,14 @@
   --footer-color: #1c1935;
   --main-text-color: #96b3fd;
   --box-color: #1c1935;
+
   --font-menu: 16px;
   --font-label: 18px;
   --font-footer: 14px;
+
+  --font-title: 36px;
+  --font-description: 20px;
+
   scroll-behavior: smooth;
 }
 
@@ -43,7 +48,7 @@ body
   margin: auto auto auto 0;
   justify-content: left;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .top-bar-right
@@ -52,6 +57,7 @@ body
   flex-direction: row;
   list-style-type: none;
   text-align: right;
+  padding-right: 10px;
 }
 
 a:visited, a:link, a:active{
@@ -78,8 +84,8 @@ a:hover{
   flex-direction: row;
   height: 360px;
   max-width: 100%;
-  padding-top: 120px;
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.6));
+  margin: auto;
 }
 
 .avatar
@@ -89,6 +95,15 @@ a:hover{
   height: 20vh;
   max-width: 100%;
   justify-content: center;
+  margin: auto;
+}
+
+.celAvatar
+{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: center;
 }
 
 .modalTriggerContainer
@@ -97,40 +112,87 @@ a:hover{
   flex-direction: row;
   margin: auto;
   width: 800px;
+  margin-top: 60px;
+  margin-bottom: 80px;
 }
 
-.propertyBox
+.title
 {
   margin: auto;
-  width: 380px;
-  padding: 20px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: var(--font-label);
-  background: var(--box-color);
-  border-radius: 4px;
+  font-size: var(--font-title);
+  color: #ffffff;
+  filter: drop-shadow(0px 0px 8px var(--main-text-color));
+}
+.imgShadow
+{
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+}
+.description
+{
+  margin: auto;
+  text-justify: auto;
+  padding: 20px;
+  max-width: 800px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: var(--font-description);
 }
 
-.leftImageContainer
+.cellContainerWrapper
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
+.cellContainer
 {
   display: flex;
   flex-direction: row;
   font-size: var(--font-label);
-  background: var(--box-color);
   border-radius: 4px;
   justify-content: center;
-  align-items: center;
-  align-self: center;
+  align-content: flex-start;
 }
-.leftContent
+.celTitle
+{
+  text-align: left;
+  font-size: var(--font-title);
+  margin-bottom: 20px;
+}
+.cellDescription
+{
+  max-width: 800px;
+  line-height: 1.5em;
+  text-align: left;
+  font-size: var(--font-description);
+  text-shadow: #121021;
+}
+.smallCell
 {
   display: flex;
   flex-direction: column;
+  width: 30%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.leftContent
+.largeCell
 {
   display: flex;
   flex-direction: column;
+  width: 40%;
+}
+.rightCell
+{
+  float:left
+}
+.leftCell
+{
+  float:right
 }
 
 .scrollToTop
@@ -143,7 +205,7 @@ a:hover{
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: rgba(255, 255, 255, 0.3); /* Set a background color */
-  cursor: pointer; /* Add a mouse pointer on hover */
+  cursor: default; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   opacity: 0;
@@ -152,6 +214,7 @@ a:hover{
 
 .scrollToTop.active
 {
+  cursor: pointer; /* Add a mouse pointer on hover */
   opacity: 1;
 }
 
