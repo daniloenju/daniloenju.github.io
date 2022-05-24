@@ -23,22 +23,37 @@
         <span>The Action Pudding</span>
       </div>
       <ul class="top-bar-right">
-        <li><a href="//">Home</a></li>
-        <li><a href="//">User Interface</a></li>
-        <li><a href="//">Pixel Art</a></li>
-        <li><a href="//">Resume</a></li>
+        <li><a href="#bg2">The Game</a></li>
+        <li><a href="#bg3">Goal</a></li>
+        <li><a href="#bg4">Team</a></li>
+        <li><a href="#bg5">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-
-  <div class="bg1">
+  <div class="bg1" id="bg1">
     <div class="particle" id="particles-js"></div>
-      <img class="logo" src="img/Logo.png" alt="Logo" />
-    
+    <img class="logo" src="img/ColdSnap.svg" alt="Logo" />
   </div>
 
-  <div class="bg2">
+  <div class="bg2" id="bg2">
+    <div class="topSnow"></div>
+    <div class="avatar"><img src="img/Idle.gif" alt="Avatar Image" /></div>
+    <div class="propertyBox">User Interface</div>
+    <div class="propertyBox">Pixel Art</div>
+    <div class="propertyBox">Programming</div>
+    <div class="modalTriggerContainer">
+      <img class="modaltrigger" src="img/example.png" id="modalTrigger01" alt="img01" />
+      <img class="modaltrigger" src="img/example.png" id="modalTrigger02" alt="img02" />
+      <img class="modaltrigger" src="img/example.png" id="modalTrigger03" alt="img03" />
+    </div>
+  </div>
+
+  <div class="bg3" id="bg3">
+    <div class="bottomSnow"></div>
+  </div>
+
+  <div class="bg4" id="bg4">
     <div class="topSnow"></div>
       <div class="avatar"><img src="img/Idle.gif" alt="Avatar Image" /></div>
       <div class="propertyBox">User Interface</div>
@@ -46,30 +61,35 @@
       <div class="propertyBox">Programming</div>
   </div>
 
-  <div class="bg3">
+  <div class="bg5" id="bg5">
     <div class="bottomSnow"></div>
-    <img class="avatar" src="img/placeholder.png" alt="Logo" />
+    <div class="leftImageContainer">
+      <div class="leftContent">
+        <span>left</span>
+      </div>  
+      <div class="rightContent">
+        <span>right</span>
+      </div>  
+    </div>
   </div>
 
-
-<!-- Trigger the Modal -->
-  <img id="myImg" src="img/placeholder.png" alt="Snow" style="width:100%;max-width:300px">
-
-  <!-- The Modal -->
   <div id="myModal" class="modal">
-
-    <!-- The Close Button -->
     <span class="close">&times;</span>
-
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
-
-    <!-- Modal Caption (Image Text) -->
+    <img class="modal-content" id="modalImg">
     <div id="caption"></div>
-</div>
+  </div>
+
+  <div class="scrollToTop" id="scrollToTop">
+    <img class="toTopImg" src="img/placeholder.png" alt="Go to Top" style="width: 40px;"/>
+  </div>
+  
   <div class="footer">2022 | Danilo Enju | All content and trademarks are property of their respective owners.</div>
+
 </body>
+
 <script src="js/modal.js"></script>
-<script src="particles.js-master/particles.js"></script>
-<script src="particles.js-master/demo/js/app.js"></script>
+<script src="particles.js/particles.js"></script>
+<script src="particles.js/app.js"></script>
+<script src="js/scrollToTop.js"></script>
+
 </html>

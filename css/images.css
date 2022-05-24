@@ -19,6 +19,12 @@ img
   margin: 0;
 }
 
+.particle { 
+  position: absolute;
+  width: 100%;
+  height: 600px; 
+}
+
 .bg1 { 
   background-image: url("../img/example.png");
   min-height: 600px; 
@@ -30,15 +36,9 @@ img
   align-items: center;
 }
 
-.particle { 
-  position: absolute;
-  width: 100%;
-  height: 600px; 
-}
-
 .bg2 { 
   background-color: var(--bg-color);
-  min-height: 300px; 
+  min-height: 600px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,27 @@ img
 
 .bg3 { 
   background-image: url("../img/Example2.png");
-  min-height: 300px; 
+  background-color: white;
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg4 { 
+  background-color: var(--bg-color);
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg5 { 
+  background-image: url("../img/Example2.png");
+  background-color: white;
+  min-height: 600px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
