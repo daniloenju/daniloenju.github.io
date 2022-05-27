@@ -1,7 +1,8 @@
 .modaltrigger 
 {
-  width: 220px;
-  height: 120px;
+  display: flex;
+  flex: 1;
+  height: auto;
   border-radius: 5px;
   border-width: 2px;
   border-color: var(--main-text-color);
@@ -19,11 +20,13 @@
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
+  flex-direction: column;
   position: fixed; /* Stay in place */
+  align-items: center;
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
+  margin: auto;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -33,23 +36,25 @@
 
 /* Modal Content (Image) */
 .modal-content {
+  align-self: center;
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 70%;
+  max-width: 1920px;
   border-radius: 10px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: var(--main-text-color);
   padding: 10px 0;
-  height: 150px;
+  height: 20px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -82,8 +87,20 @@
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 768px){
   .modal-content {
     width: 100%;
+  }
+  .modaltrigger 
+  {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: var(--main-text-color);
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: auto;
   }
 }

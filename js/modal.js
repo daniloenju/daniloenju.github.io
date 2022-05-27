@@ -9,21 +9,21 @@ var captionText = document.getElementById("caption");
 
 img01.onclick = function()
 {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
 
 img02.onclick = function()
 {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
 
 img03.onclick = function()
 {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
