@@ -15,16 +15,20 @@
   height: 75px;
   margin-top: -5px;
 }
-
+.imgShadow
+{
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+}
 .particle { 
   position: absolute;
   width: 100%;
-  height: 90vh; 
+  height: 80vh; 
 }
 
 .bg1 { 
   background-image: url("../img/example.png");
-  height: 90vh; 
+  height: 80vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,13 +41,18 @@
 }
 
 .bg2 { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--bg-color);
   background-image: url("../img/texture.png");
   background-repeat: repeat;
-  min-height: 60vh;   
+  min-height: 50vh;  
 }
 
 .bg3 { 
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/example2.jpeg");
   background-color: white;
   min-height: 60vh; 
@@ -54,13 +63,18 @@
 }
 
 .bg4 { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--bg-color);
   background-image: url("../img/texture.png");
   background-repeat: repeat;
-  min-height: 60vh;    
+  min-height: 50vh;   
 }
 
 .bg5 { 
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/example.png");
   background-color: white;
   min-height: 60vh; 
@@ -73,10 +87,10 @@
 {
   .bg1
   {
-    height: 40vh;
+    height: 100vw;
   }
   .particle { 
-    height: 40vh; 
+    height: 100vw; 
   }
   [class*="bg"] {
     background-attachment:local;
