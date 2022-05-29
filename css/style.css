@@ -130,10 +130,12 @@ a:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 2vh;
 }
 
 .title
 {
+  margin-bottom: 2vh;
   text-align: center;
   font-size: var(--font-title);
   color: #ffffff;
@@ -227,10 +229,6 @@ a:hover{
 
 @media only screen and (max-width: 768px) 
 {
-  .title
-  {
-    margin-bottom: 2vh;
-  }
   .cellContainer
   {
     flex-direction: column;
@@ -250,6 +248,5 @@ a:hover{
   .modalTriggerContainer
   {
     flex-direction: column;
-    margin-bottom: 2vh;
   }
 }
