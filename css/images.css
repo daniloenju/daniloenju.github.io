@@ -1,34 +1,33 @@
-
-
-.topSnow{
-  background-image: url("../img/TopSnow.png");
+.topSnow {
+  background-image: url("../img/textureTop.png");
   background-repeat: repeat-x;
   width: 100%;
   height: 75px;
   margin: 0;
 }
 
-.bottomSnow{
-  background-image: url("../img/bottomSnow.png");
+.bottomSnow {
+  background-image: url("../img/textureBottom.png");
   background-repeat: repeat-x;
   width: 100%;
   height: 75px;
   margin-top: -5px;
 }
-.imgShadow
-{
+
+.imgShadow {
   border-radius: 5px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
 }
-.particle { 
+
+.particle {
   position: absolute;
   width: 100%;
-  height: 80vh; 
+  height: 80vh;
 }
 
-.bg1 { 
-  background-image: url("../img/example.png");
-  height: 80vh; 
+.bg1 {
+  background-image: url("../img/AzureStars.png");
+  height: 80vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,62 +39,72 @@
   justify-content: center;
 }
 
-.bg2 { 
+.bg2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--bg-color);
   background-image: url("../img/texture.png");
   background-repeat: repeat;
-  min-height: 50vh;  
 }
 
-.bg3 { 
+.bg3 {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/example2.jpeg");
+  background-image: url("../img/DangerGang.jpeg");
   background-color: white;
-  min-height: 60vh; 
+  min-height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bg4 { 
+.bg4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--bg-color);
   background-image: url("../img/texture.png");
   background-repeat: repeat;
-  min-height: 50vh;   
 }
 
-.bg5 { 
+.bg5 {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/example.png");
-  background-color: white;
-  min-height: 60vh; 
+  background-color: var(--bg-darker-color);
+  min-height: 30vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-width: 768px) 
-{
-  .bg1
-  {
+
+@media only screen and (max-width: 1000px) {
+
+  .particle {
     height: 100vw;
   }
-  .particle { 
-    height: 100vw; 
-  }
-  [class*="bg"] {
-    background-attachment:local;
-    background-position:center;
+
+  .bg1 {
+    height: 100vw;
+    background-attachment: local;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+  }
+
+  .bg3 {
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg5 {
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
