@@ -1,3 +1,31 @@
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  max-width: 300px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.6));
+  margin: auto;
+}
+.run
+{
+  display: flex;
+  position: absolute;
+  left: 140%;
+  animation-name: runToLeft;
+  animation-timing-function: linear;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes runToLeft {
+  from {
+    left: 140%;
+  }
+
+  to {
+    left: -50%;
+  }
+}
 .topSnow {
   background-image: url("../img/textureTop.png");
   background-repeat: repeat-x;
@@ -14,11 +42,6 @@
   margin-top: -5px;
 }
 
-.imgShadow {
-  border-radius: 5px;
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
-}
-
 .particle {
   position: absolute;
   width: 100%;
@@ -32,11 +55,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .bg2 {
@@ -85,7 +107,9 @@
   .particle {
     height: 100vw;
   }
-
+  .logo {
+    height: 100vw;
+  }
   .bg1 {
     height: 100vw;
     background-attachment: local;
