@@ -11,6 +11,8 @@
   display: flex;
   position: absolute;
   left: 140%;
+  width: 20%;
+  height: 20%vh;
   animation-name: runToLeft;
   animation-timing-function: linear;
   animation-duration: 6s;
@@ -117,7 +119,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-
+  .run
+  {
+    display: none;
+    animation-name: none;
+  }
   .bg3 {
     background-attachment: local;
     background-position: center;
