@@ -6,9 +6,7 @@
   --box-color: #1c1935;
 
   --font-menu: 16px;
-  --font-label: 18px;
-  --font-footer: 14px;
-
+  --font-footer: 16px;
   --font-title: 36px;
   --font-description: 20px;
 
@@ -19,7 +17,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: var(--font-label);
+  font-size: var(--font-description);
   color: var(--main-text-color);
   background: var(--bg-color);
 }
@@ -198,6 +196,12 @@ a:hover {
 
 @media only screen and (max-width: 1000px) {
 
+  :root {
+    --font-menu: 20px;
+    --font-footer: 20px;
+    --font-title: 36px;
+    --font-description: 24px;
+  }
   .wrapper-cel,
   .wrapper-cel-reverse {
     flex-direction: column-reverse;
