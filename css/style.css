@@ -5,11 +5,11 @@
   --main-text-color: #96b3fd;
   --box-color: #1c1935;
 
-  --font-menu: 1.0rem;
-  --font-footer: 0.8rem;
-  --font-title: 2.0rem;
-  --font-label: 1.3rem;
-  --font-description: 1.2rem;
+  --font-menu: 1.0em;
+  --font-footer: 0.8em;
+  --font-title: 1.8em;
+  --font-label: 1.2em;
+  --font-description: 1.1em;
 
   scroll-behavior: smooth;
 }
@@ -150,6 +150,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 30%;
+  height: 30%;
 }
 .imageCell {
   display: flex;
@@ -216,6 +217,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
