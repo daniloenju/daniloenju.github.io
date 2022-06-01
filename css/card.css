@@ -29,6 +29,7 @@
     background-color: rgba(41, 74, 136, 0.3);
     height: 60px;
     width: 90%;
+    font-size: var(--font-label);
     align-items: center;
     justify-content: center;
 }

@@ -8,6 +8,7 @@
   --font-menu: 16px;
   --font-footer: 16px;
   --font-title: 36px;
+  --font-label: 22px;
   --font-description: 20px;
 
   scroll-behavior: smooth;
@@ -20,6 +21,7 @@ body {
   font-size: var(--font-description);
   color: var(--main-text-color);
   background: var(--bg-color);
+  margin: 0;
 }
 
 .top-bar {
@@ -53,7 +55,7 @@ body {
   align-items: center;
   justify-content: space-between;
   align-self: center;
-  min-height: 50vh;
+  min-height: 70vh;
 }
 
 .wrapper-cel-reverse {
@@ -68,10 +70,12 @@ body {
 }
 
 .top-bar-left {
+  display: flex;
   margin: auto auto auto 0;
   justify-content: left;
   text-align: left;
   padding-left: 10px;
+  align-items: center;
 }
 
 .top-bar-right {
@@ -166,7 +170,7 @@ a:hover {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   cursor: default;
   padding: 15px;
   border-radius: 10px;
@@ -181,7 +185,7 @@ a:hover {
 
 .scrollToTop.active:hover {
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer {
@@ -198,12 +202,6 @@ a:hover {
 
 @media only screen and (max-width: 1000px) {
 
-  :root {
-    --font-menu: 20px;
-    --font-footer: 20px;
-    --font-title: 36px;
-    --font-description: 24px;
-  }
   .wrapper-cel,
   .wrapper-cel-reverse {
     flex-direction: column-reverse;
@@ -217,17 +215,15 @@ a:hover {
   .imageCellContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-
   .textCell {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-
   .modalTriggerContainer {
     flex-direction: column;
   }
