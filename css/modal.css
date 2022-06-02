@@ -7,11 +7,29 @@
   border-style: solid;
   cursor: pointer;
   transition: 0.3s;
-  opacity: 0.7;
+  opacity: 1;
+}
+
+.modaltriggerFernanda {
+  display: flex;
+  width: 30%;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  aspect-ratio: 16/9;
+  object-fit:cover;
+  opacity: 1;
 }
 
 .modaltrigger:hover {
   opacity: 1;
+  transform: scale(1.05);
+}
+.modaltriggerFernanda:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 /* The Modal (background) */
@@ -110,7 +128,8 @@
     width: 100%;
   }
 
-  .modaltrigger {
+  .modaltrigger,
+  .modaltriggerFernanda {
     margin-top: 2vh;
     width: 100%;
   }
