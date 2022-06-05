@@ -10,7 +10,33 @@
   opacity: 1;
 }
 
-.modaltriggerFernanda {
+.modaltriggerAlt {
+  display: flex;
+  width: 30%;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  aspect-ratio: 16/9;
+  object-fit:cover;
+  opacity: 1;
+}
+
+.modaltriggerSquare {
+  display: flex;
+  width: 30%;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  aspect-ratio: 1/1;
+  object-fit:cover;
+  opacity: 1;
+}
+
+.modaltriggerVideo {
   display: flex;
   width: 30%;
   border-radius: 5px;
@@ -27,7 +53,15 @@
   opacity: 1;
   transform: scale(1.05);
 }
-.modaltriggerFernanda:hover {
+.modaltriggerAlt:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.modaltriggerSquare:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.modaltriggerVideo:hover {
   opacity: 1;
   transform: scale(1.05);
 }
@@ -53,8 +87,16 @@
 .modal-content {
   align-self: center;
   margin: auto;
-  display: block;
-  width: 70%;
+  display: none;
+  height: 80%;
+  max-width: 1920px;
+  border-radius: 10px;
+}
+.modal-content-video {
+  align-self: center;
+  margin: auto;
+  display: none;
+  height: 80%;
   max-width: 1920px;
   border-radius: 10px;
 }
@@ -126,10 +168,13 @@
 @media only screen and (max-width: 1000px) {
   .modal-content {
     width: 100%;
+    height: auto;
   }
 
   .modaltrigger,
-  .modaltriggerFernanda {
+  .modaltriggerAlt,
+  .modaltriggerSquare,
+  .modaltriggerVideo {
     margin-top: 2vh;
     width: 100%;
   }

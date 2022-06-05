@@ -15,7 +15,7 @@
   }
   
   .bg1 {
-    background-color: #615b7f;
+    background-color: #242c51;
     height: 80vh;
     background-attachment: fixed;
     background-position: center;
@@ -25,6 +25,11 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    background-image: url("../img/Fernanda/Darkness.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .bg2 {
@@ -40,9 +45,8 @@
   .bg3 {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/DangerGang.jpeg");
-    background-color: white;
-    min-height: 80vh;
+    align-items: center;
+    background-image: url("../img/DarkerBG.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
