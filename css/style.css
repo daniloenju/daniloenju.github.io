@@ -1,155 +1,58 @@
 :root {
-  --bg-color: #121021;
-  --bg-darker-color: #0e0e18;
-  --footer-color: #1c1935;
-  --main-text-color: #96b3fd;
-  --box-color: #1c1935;
+  --color-bg: #0f052d;
+  --color-bg-light: #203671;
+  --color-text-white: #36868f;
+  --color-text-accent: #5fc75d;
 
   --font-menu: 1.0em;
   --font-footer: 0.8em;
-  --font-title: 1.8em;
+  --font-title: 1.2em;
   --font-label: 1.2em;
-  --font-description: 1.1em;
+  --font-description: 1.0em;
 
   scroll-behavior: smooth;
 }
 
-.company {
-  height: 30px;
-  margin-right: 20px;
-}
-
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Noto Sans Mono', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: var(--font-description);
-  color: var(--main-text-color);
-  background: var(--bg-color);
+  color: var(--color-text-white);
+  background: var(--color-bg);
+  text-align: -webkit-center;
   margin: 0;
 }
 
-.top-bar {
-  display: flex;
-  flex-direction: row;
-  font-size: var(--font-menu);
-  justify-content: center;
-  background-color: var(--bg-color);
+.bg-wrapper {
+  max-width: 1200px;
+  padding: 40px;
+  background: var(--color-bg-light);
 }
-.top-bar-left {
-  display: flex;
-  margin: auto auto auto 0;
-  justify-content: left;
+.bg-wrapper-dark {
+  max-width: 1200px;
+  padding: 40px;
+  background: var(--color-bg);
+}
+.title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: var(--font-title);
+  color: var(--color-text-accent);
+  filter: drop-shadow(0px 0px 8px var(--main-text-color));
+}
+.textbox{
+  max-width: 60%;
+  border:32px solid transparent;
+  border-image: url("../img/panel.png");
+  border-image-slice: 30% fill;
+  padding: 0px 0px 10px 0px;
+}
+.description {
+  line-height: 1.5em;
   text-align: left;
-  padding-left: 10px;
-  align-items: center;
-}
-.top-bar-right {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  text-align: right;
-  padding-right: 10px;
-}
-
-.wrapper-row {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: row;
-}
-.wrapper-column {
-  width: 80%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.wrapper-cel {
-  width: 80%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-self: center;
-  min-height: 70vh;
-}
-.wrapper-cel-reverse {
-  width: 80%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  align-self: center;
-  min-height: 50vh;
-}
-
-.quickLink:visited,
-.quickLink:link,
-.quickLink:active {
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: var(--font-menu);
-  color: var(--main-text-color);;
-  background: none;
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--main-text-color);;
-  padding: 15px 20px 15px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.3s all ease;
-  margin-top: 20px;
-  margin-right: 20px;
-  width: fit-content;
-}
-
-.quickLink:hover {
-  color: var(--bg-color);
-  background: var(--main-text-color);
-  border-color: white;
-  text-decoration: none;
-}
-
-.topMenu:visited,
-.topMenu:link,
-.topMenu:active {
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: var(--font-menu);
-  color: var(--main-text-color);
-  padding: 10px;
-  margin-left: 5px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: 0.3s all ease;
-}
-
-.topMenu:hover {
-  color: #ffffff;
-  background: var(--footer-color);
-  text-decoration: none;
-}
-
-.activeMenu
-{
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: var(--font-menu);
-  color: #ffffff;
-  background: var(--footer-color);
-  padding: 10px;
-  margin-left: 5px;
-  border-radius: 4px;
-  text-decoration: none;
-  pointer-events: none;
-  cursor: default;
+  font-size: var(--font-description);
 }
 
 .modalTriggerContainer {
@@ -181,51 +84,6 @@ body {
   margin-bottom: 40px;
 }
 
-.title {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: var(--font-title);
-  color: #ffffff;
-  filter: drop-shadow(0px 0px 8px var(--main-text-color));
-}
-.description {
-  margin-bottom: 20px;
-  line-height: 1.5em;
-  text-align: left;
-  font-size: var(--font-description);
-}
-
-.celTitle {
-  color: #ffffff;
-  filter: drop-shadow(0px 0px 8px var(--main-text-color));
-  text-align: left;
-  font-size: var(--font-title);
-  margin-bottom: 20px;
-}
-.cellDescription {
-  line-height: 1.5em;
-  text-align: left;
-  font-size: var(--font-description);
-  filter: drop-shadow(0px 2px 2px var(--bg-color));
-}
-
-.imageCellContainer {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-.imageCell {
-  display: block;
-  height: auto;
-  object-fit: contain;
-}
-.textCell {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-}
-
 .scrollToTop {
   display: flex;
   position: fixed;
@@ -254,9 +112,7 @@ body {
 }
 
 .footer {
-  font-family: 'Roboto', sans-serif;
-  justify-content: center;
-  background: var(--footer-color);
+  text-align: center;
   font-size: var(--font-footer);
   padding-left: 20px;
   padding-right: 20px;
