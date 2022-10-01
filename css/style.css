@@ -13,6 +13,11 @@
 
   scroll-behavior: smooth;
 }
+.homeImage {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
 
 body {
   font-family: 'Noto Sans Mono', monospace;
@@ -48,7 +53,6 @@ body {
 }
 .textbox{
   max-width: 400px;
-  min-width: 400px;
   border:32px solid transparent;
   border-image: url("../img/panel.png");
   border-image-slice: 30% fill;
@@ -150,6 +154,11 @@ body {
     flex-direction: column;
   }
   
+  .homeImage {
+    width: 100%;
+    max-width: 500px;
+  }
+
   .modalTriggerContainer,
   .modalTriggerContainerNoMargin,
   .modalTriggerContainerSmall,
