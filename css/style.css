@@ -5,19 +5,13 @@
   --color-text-accent: #c56981;
   --color-text-link: #79b2ff;
 
-  --font-menu: 1.0em;
   --font-footer: 0.8em;
   --font-title: 1.2em;
-  --font-label: 1.2em;
   --font-description: 1.0em;
 
   scroll-behavior: smooth;
 }
-.homeImage {
-  width: auto;
-  height: auto;
-  object-fit: cover;
-}
+
 
 body {
   font-family: 'Noto Sans Mono', monospace;
@@ -28,6 +22,12 @@ body {
   background: var(--color-bg);
   text-align: -webkit-center;
   margin: 0;
+}
+
+.homeImage {
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
 
 .bg-wrapper {
@@ -44,7 +44,13 @@ body {
   justify-content: center;
   flex-direction: row-reverse;
 }
-
+.link-wrapper {
+  max-width: 300px;
+  padding: 40px;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+}
 .title {
   margin-bottom: 20px;
   text-align: center;
@@ -66,7 +72,9 @@ body {
 .accentText {
   color:var(--color-text-accent);
 }
-
+.dimText {
+  color:var(--color-bg-light);
+}
 .linkText {
   color:var(--color-text-link);
   text-decoration: none;
