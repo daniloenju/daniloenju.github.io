@@ -7,6 +7,7 @@
 
   --font-footer: 0.8em;
   --font-title: 1.2em;
+  --font-title-large: 1.4em;
   --font-description: 1.0em;
 
   scroll-behavior: smooth;
@@ -51,11 +52,24 @@ body {
   justify-content:space-between;
   flex-direction: row;
 }
+.modal-wrapper {
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
 
 .title {
   margin-bottom: 20px;
   text-align: center;
   font-size: var(--font-title);
+  color: var(--color-text-accent);
+}
+.bigTitle {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: var(--font-title-large);
   color: var(--color-text-accent);
 }
 .description {
@@ -80,6 +94,11 @@ body {
 .dimText {
   color:var(--color-bg-light);
 }
+.dimTextFixed120{
+  color:var(--color-bg-light);
+  display: inline-block;
+  width: 120px;
+}
 .linkText {
   color:var(--color-text-link);
   text-decoration: none;
@@ -92,6 +111,15 @@ body {
   border-image-slice: 30% fill;
   padding: 0px 0px 10px 0px;
 }
+
+.curriculum{
+  max-width: 740px;
+  border:32px solid transparent;
+  border-image: url("../img/panel.png");
+  border-image-slice: 30% fill;
+  padding: 10px;
+}
+
 .modalTriggerContainer {
   display: flex;
   flex-direction: row;
