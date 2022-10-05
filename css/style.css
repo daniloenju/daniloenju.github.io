@@ -45,11 +45,17 @@ body {
   justify-content: center;
   flex-direction: row-reverse;
 }
+.header{
+  margin-top: 2em;
+  width: 100%;
+  padding: 0.5em 0.5em;
+  background-color: rgba(0, 0, 0, 0.15);
+}
 .link-wrapper {
-  max-width: 300px;
-  padding: 40px;
+  align-items: center;
+  max-width: 760px;
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
   flex-direction: row;
 }
 .modal-wrapper {
@@ -107,6 +113,11 @@ body {
 .linkText {
   color:var(--color-text-link);
   text-decoration: none;
+}
+.linkTextHighlight {
+  color:var(--color-text-accent);
+  text-decoration:none;
+  cursor:default;
 }
 
 .textbox{
