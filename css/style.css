@@ -60,14 +60,14 @@ body {
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 1.0em;
   text-align: center;
   font-size: var(--font-title);
   color: var(--color-text-accent);
 }
 .bigTitle {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
   text-align: center;
   font-size: var(--font-title-large);
   color: var(--color-text-accent);
@@ -78,27 +78,32 @@ body {
   font-size: var(--font-description);
 }
 
+.dataRow {
+  line-height: 1.5em;
+  text-align: left;
+  font-size: var(--font-description);
+  display: flex;
+  flex-direction: row;
+}
+
 .accentText {
   color:var(--color-text-accent);
 }
-.accentTextFixed100 {
+.accentTextFixed {
   color:var(--color-text-accent);
   display: inline-block;
-  width: 100px;
+  min-width: 9em;
 }
-.accentTextFixed120 {
-  color:var(--color-text-accent);
-  display: inline-block;
-  width: 120px;
-}
+
 .dimText {
   color:var(--color-bg-light);
 }
-.dimTextFixed120{
+.dimTextFixed{
   color:var(--color-bg-light);
   display: inline-block;
-  width: 120px;
+  min-width: 9em;
 }
+
 .linkText {
   color:var(--color-text-link);
   text-decoration: none;
@@ -174,10 +179,29 @@ body {
     width: 100%;
     max-width: 500px;
   }
-
+  
   .modalTriggerContainer {
     flex-direction: column;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  :root {  
+    --font-footer: 0.7em;
+    --font-title: 1.0em;
+    --font-title-large: 1.1em;
+    --font-description: 0.9em;
+  }
+  .dataRow {
+    margin-bottom: 0.5em;
+  }
+  .accentTextFixed {
+    min-width: 10em;
+  }
+  .dimTextFixed{
+    min-width: 10em;
   }
 }
