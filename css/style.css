@@ -113,11 +113,13 @@ body {
 .linkText {
   color:var(--color-text-link);
   text-decoration: none;
+  flex: 1;
 }
 .linkTextHighlight {
   color:var(--color-text-accent);
   text-decoration:none;
   cursor:default;
+  flex: 1;
 }
 
 .textbox{
