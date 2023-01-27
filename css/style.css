@@ -4,10 +4,10 @@
   --color-text-white: #a3a29a;
   --color-text-accent: #c56981;
   --color-text-link: #79b2ff;
-
+  --color-bg-dark: rgba(0, 0, 0, 0.15);
   --font-footer: 0.8em;
   --font-title: 1.2em;
-  --font-title-large: 1.4em;
+  --font-title-large: 1.6em;
   --font-description: 1.0em;
 
   scroll-behavior: smooth;
@@ -49,7 +49,7 @@ body {
   margin-top: 2em;
   width: auto;
   padding: 0.5em 0.5em;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--color-bg-dark);
 }
 .link-wrapper {
   align-items: center;

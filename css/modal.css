@@ -11,6 +11,7 @@
   margin-bottom: 4%;
   padding: 1%;
   background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 
 .modaltriggerSquare {
@@ -39,7 +40,8 @@
 
 .modaltrigger:hover {
   opacity: 1;
-  border-color: var(--color-text-accent);
+  transform: scale(1.05);
+  border-color: var(--color-text-link);
 }
 
 .modaltriggerSquare:hover {
