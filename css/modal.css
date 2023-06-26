@@ -163,5 +163,7 @@
   .modaltriggerVideo {
     margin-top: 2vh;
     width: 100%;
+    margin: -1%;
+    margin-bottom: 4%;
   }
 }
