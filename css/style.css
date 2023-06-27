@@ -1,10 +1,11 @@
 :root {
   --color-bg: #282328;
+  --color-bg-dark: #251f25;
   --color-bg-light: #545c7e;
   --color-text-white: #a3a29a;
   --color-text-accent: #c56981;
   --color-text-link: #79b2ff;
-  --color-bg-dark: rgba(0, 0, 0, 0.15);
+  --color-bg-menu: rgba(0, 0, 0, 0.15);
   --font-footer: 0.8em;
   --font-title: 1.2em;
   --font-title-large: 1.6em;
@@ -20,7 +21,7 @@ body {
   font-weight: normal;
   font-size: var(--font-description);
   color: var(--color-text-white);
-  background: var(--color-bg);
+  background: var(--color-bg-dark);
   text-align: -webkit-center;
   margin: 0;
 }
@@ -49,7 +50,7 @@ body {
   margin-top: 2em;
   width: auto;
   padding: 0.5em 0.5em;
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-bg-menu);
 }
 .link-wrapper {
   align-items: center;
