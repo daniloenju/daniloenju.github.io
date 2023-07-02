@@ -23,6 +23,7 @@ body {
   color: var(--color-text-white);
   background: var(--color-bg-dark);
   text-align: -webkit-center;
+  text-align: -moz-center;
   margin: 0;
 }
 
@@ -39,6 +40,7 @@ body {
   justify-content: center;
   flex-direction: row;
 }
+
 .bg-wrapper-reverse {
   max-width: 1200px;
   padding: 40px;
@@ -46,24 +48,27 @@ body {
   justify-content: center;
   flex-direction: row-reverse;
 }
-.header{
+
+.header {
   margin-top: 2em;
   width: auto;
   padding: 0.5em 0.5em;
   background-color: var(--color-bg-menu);
 }
+
 .link-wrapper {
   align-items: center;
   max-width: 760px;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-direction: row;
 }
+
 .modal-wrapper {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .title {
@@ -72,6 +77,7 @@ body {
   font-size: var(--font-title);
   color: var(--color-text-accent);
 }
+
 .bigTitle {
   margin-top: 0.5em;
   margin-bottom: 1.5em;
@@ -79,6 +85,7 @@ body {
   font-size: var(--font-title-large);
   color: var(--color-text-accent);
 }
+
 .description {
   line-height: 1.5em;
   text-align: left;
@@ -94,46 +101,49 @@ body {
 }
 
 .accentText {
-  color:var(--color-text-accent);
+  color: var(--color-text-accent);
 }
+
 .accentTextFixed {
-  color:var(--color-text-accent);
+  color: var(--color-text-accent);
   display: inline-block;
   min-width: 9em;
 }
 
 .dimText {
-  color:var(--color-bg-light);
+  color: var(--color-bg-light);
 }
-.dimTextFixed{
-  color:var(--color-bg-light);
+
+.dimTextFixed {
+  color: var(--color-bg-light);
   display: inline-block;
   min-width: 9em;
 }
 
 .linkText {
-  color:var(--color-text-link);
+  color: var(--color-text-link);
   text-decoration: none;
   flex: 1;
 }
+
 .linkTextHighlight {
-  color:var(--color-text-accent);
-  text-decoration:none;
-  cursor:default;
+  color: var(--color-text-accent);
+  text-decoration: none;
+  cursor: default;
   flex: 1;
 }
 
-.textbox{
+.textbox {
   max-width: 400px;
-  border:32px solid transparent;
+  border: 32px solid transparent;
   border-image: url("../img/panel.png");
   border-image-slice: 30% fill;
   padding: 0px 0px 10px 0px;
 }
 
-.curriculum{
+.curriculum {
   max-width: 740px;
-  border:32px solid transparent;
+  border: 32px solid transparent;
   border-image: url("../img/panel.png");
   border-image-slice: 30% fill;
   padding: 10px;
@@ -162,10 +172,12 @@ body {
   opacity: 0;
   transition: 0.6s all ease;
 }
+
 .scrollToTop.active {
   cursor: pointer;
   opacity: 0.5;
 }
+
 .scrollToTop.active:hover {
   opacity: 1;
 }
@@ -181,19 +193,20 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+
   .bg-wrapper,
-  .bg-wrapper-reverse{
+  .bg-wrapper-reverse {
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  
+
   .homeImage {
     width: 100%;
     max-width: 500px;
   }
-  
+
   .modalTriggerContainer {
     flex-direction: column;
     margin-top: 0px;
@@ -203,19 +216,22 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
-  :root {  
+  :root {
     --font-footer: 0.7em;
     --font-title: 1.0em;
     --font-title-large: 1.1em;
     --font-description: 0.9em;
   }
+
   .dataRow {
     margin-bottom: 0.5em;
   }
+
   .accentTextFixed {
     min-width: 10em;
   }
-  .dimTextFixed{
+
+  .dimTextFixed {
     min-width: 10em;
   }
 }
