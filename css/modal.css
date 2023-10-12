@@ -13,7 +13,10 @@
   background-color: rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
-
+.modalempty {
+  display: flex;
+  width: 28%;
+}
 .modaltriggerSquare {
   display: flex;
   width: 30%;
