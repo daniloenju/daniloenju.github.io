@@ -6,6 +6,7 @@
   --color-text-accent: #c56981;
   --color-text-link: #79b2ff;
   --color-bg-menu: rgba(0, 0, 0, 0.15);
+  --color-bg-menu-sticky: rgba(22, 18, 16, 0.65);
   --font-footer: 0.8em;
   --font-title: 1.2em;
   --font-title-large: 1.6em;
@@ -25,6 +26,7 @@ body {
   text-align: -webkit-center;
   text-align: -moz-center;
   margin: 0;
+  padding-top: 3.5em;
 }
 
 .homeImage {
@@ -50,10 +52,19 @@ body {
 }
 
 .header {
-  margin-top: 2em;
-  width: auto;
-  padding: 0.5em 0.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.0em 0.5em;
   background-color: var(--color-bg-menu);
+  transition: 0.3s all ease;
+}
+
+.header.active {
+  padding: 0.5em 0.5em;
+  background-color: var(--color-bg-menu-sticky);
+  transition: 0.3s all ease;
+  z-index: 50;
 }
 
 .link-wrapper {
@@ -70,7 +81,6 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
 }
-
 
 .title {
   margin-bottom: 1.0em;

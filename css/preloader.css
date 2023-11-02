@@ -1,6 +1,6 @@
 .preloader{
-    height: 100vh;
-    margin-top: -2em;
+    height: 110vh;
+    margin-top: -5em;
     width: 100%;
     background-color: var(--color-bg-dark);
     align-items: center;
