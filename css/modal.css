@@ -10,7 +10,6 @@
   opacity: 1;
   margin-bottom: 4%;
   padding: 1%;
-  background: url("https://daniloenju.github.io/img/Loading.gif") rgba(0, 0, 0, 0.3) no-repeat center;
   transition: 0.3s;
 }
 .modalempty {
