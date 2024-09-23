@@ -80,6 +80,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
+  row-gap: 2em;
 }
 
 .title {
@@ -107,6 +108,13 @@ body {
   line-height: 1.5em;
   text-align: left;
   font-size: var(--font-description);
+  display: flex;
+  flex-direction: row;
+}
+.dataRowLarge {
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-size: 1.1em;
   display: flex;
   flex-direction: row;
 }
@@ -157,7 +165,7 @@ body {
   border: 32px solid transparent;
   border-image: url("../img/panel.png");
   border-image-slice: 30% fill;
-  padding: 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .modalTriggerContainer {

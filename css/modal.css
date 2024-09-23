@@ -8,10 +8,20 @@
   cursor: pointer;
   object-fit: cover;
   opacity: 1;
-  margin-bottom: 4%;
   padding: 1%;
   transition: 0.3s;
 }
+.modaltriggerLarge {
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px var(--color-bg-dark);
+  cursor: pointer;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.3s;
+}
+
 .modalempty {
   display: flex;
   width: 28%;
@@ -49,6 +59,12 @@
   opacity: 1;
   transform: scale(1.05);
   border-color: var(--color-text-link);
+}
+
+.modaltriggerLarge:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  box-shadow: 0px 3px 6px var(--color-bg-dark);
 }
 
 .modaltriggerSquare:hover {
