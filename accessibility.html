@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="ISO-8859-1">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L773T9W6EX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L773T9W6EX');
+  </script>
+
+  <Title>Danilo's Accessibility Tips</Title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/preloader.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/heart.png">
+</head>
+
+</html>
+<div class="preloader">
+  <img class="preloader-image" src="img/Loading.gif" alt="loading">
+</div>
+
+<body>
+  <div class="header" id="stickyHeader">
+    <div class="link-wrapper">
+      <a href="index.html" class="linkText">Home</a>
+      <a href="interfaces.html" class="linkText">Interfaces</a>
+      <a href="personal.html" class="linkText">Art</a>
+      <div class="linkTextHighlight">Resources</div>
+      <a href="curriculum.html" class="linkText">About</a>
+    </div>
+  </div>
+
+  <div class="bg-wrapper">
+    <img src="img/Gameography.png" alt="Portrait" class="homeImage">
+    <div class="textbox">
+      <div class="title">
+        What is this?
+      </div>
+      <div class="description">
+        Hello there! This is a space I decided to use to keep some accessibility insights and knowledge that I acquired
+        throughtout the years in the industry and wanted to have them recorded.
+        <br><br>
+        I will cover a couple of specific topics I'm passionate about, since a lot of good accessibility reports
+        from console holders are public and a very good source of information already!
+        <br><br>
+        I plan to expand and polish this further by adding more images, more examples and more resources!
+      </div>
+    </div>
+  </div>
+
+  <img src="img/Division.png" alt="New Section">
+  <br>
+
+  <div class="bg-wrapper-reverse">
+    <!-- <img src="img/projects/Animation/Vampire.gif" alt="Portrait" class="imageContain"> -->
+    <div class="textboxLarge">
+      <div class="title">
+        Colourblindness
+      </div>
+      <div class="description">
+        When we cover accessibility, colour change and high contrast options are usually the default option we expect
+        from a big scope games. It is a fairly common condition and a good friendly colour and contrast can enhance the
+        readability and accessibility for everyone!
+        <br><br>
+        But there isn't really an easy solution to it, and for smaller games where the budget is tighter, coding an
+        alternative colour schemes for the UI will increase the scope and maintanance considerably.
+        <br><br>
+        So understanding how to mitigate colour dependency is the key to create a friendly and accessible colour
+        palette!
+        <br><br>
+        Easier said than done, certainly! Even this website is far from perfect and it only has 4 colours! But it's
+        important to acknowledge the problem, and use your good designer sense(which is asking others for opinion) to
+        mitigate it as much as you can.
+      </div>
+    </div>
+  </div>
+
+  <img src="img/Division.png" alt="New Section">
+  <br>
+
+  <div class="bg-wrapper-reverse">
+    <!-- <img src="img/projects/Animation/Mage.gif" alt="Portrait" class="imageContain"> -->
+    <div class="textboxLarge">
+      <div class="title">
+        Start with Contrast
+      </div>
+      <div class="description">
+        Contrast is the universal tool of an accessible UI! it doesn't rely on colours, makes everything more readable
+        and can direct the eye for a nice and elegant visual hierarchy.
+        <br><br>
+        So before adding any colour to differentiate your on/off toggles, warnings or positive feedback, try to work
+        with the right contrast to convey the same message.
+        <br><br>
+        A lower contrast between the text and its container can express disabled states, placeholder text for inputs, a
+        toggled off switch and so much more. The same way a higher contrast can convey focused states, an important
+        warning or just a very good way to keep your UI easy to read.
+      </div>
+    </div>
+  </div>
+
+  <img src="img/Division.png" alt="New Section">
+  <br>
+
+  <div class="bg-wrapper-reverse">
+    <!-- <img src="img/projects/Animation/Vampire.gif" alt="Portrait" class="imageContain"> -->
+    <div class="textboxLarge">
+      <div class="title">
+        Understanding Fonts
+      </div>
+      <div class="description">
+        Fonts are a very complex and hard subject, so I'll cover the very basics for a general use accessible UI.
+        <br><br>
+        We have access to a unlimited amount of paid and free fonts online, as well as open source fonts with multiple
+        language support. You can even make your own font if needed!
+        <br><br>
+        But when it comes to accessibility, we have to limit ourselves and choose from a limited, yet still impressively
+        vast amount of fonts that support certain features like supplement latin glyphs (Fa&ccedil;ade,
+        R&eacute;sum&eacute;, Se&ntilde;or etc.) and fonts for different alphabets (Japanese, Hangul, Cyrillic
+        etc.)
+        <br><br>
+        Not only it needs to support the language your developing to, but also think of how you want them to look like!
+        But keep in mind that sans serif fonts are generaly favoured as a more accessible choice!
+      </div>
+    </div>
+  </div>
+
+  <img src="img/Division.png" alt="New Section">
+  <br>
+
+  <div class="bg-wrapper-reverse">
+    <!-- <img src="img/projects/Animation/Mage.gif" alt="Portrait" class="imageContain"> -->
+    <div class="textboxLarge">
+      <div class="title">
+        Format your texts
+      </div>
+      <div class="description">
+        Once you've chosen a suitable font for all your needs, it's time to adjust them for you game's needs!
+        <br><br>
+        The recommended minimum font size for consoles games are 26px for 1080p, with an option to scale up for larger
+        resolution if your UI is not scaling to match the higher resolutions.
+        <br><br>
+        But also it's important to remember to use a larger space between the each text lines, also known as line
+        height. The simple rule is to use 1.5x height for any paragraph longer than 2 lines of text!
+        <br><br>
+        For example: for 30px size font, aim to use a 45px line height(30&times;1.5)
+      </div>
+    </div>
+  </div>
+
+  <img src="img/Division.png" alt="New Section">
+  <br>
+
+  <div class="bg-wrapper-reverse">
+    <!-- <img src="img/projects/Animation/Vampire.gif" alt="Portrait" class="imageContain"> -->
+    <div class="textboxLarge">
+      <div class="title">
+        Readability is key!
+      </div>
+      <div class="description">
+        The key to a successful text is not only in the font itself, but how to fit them perfectly in your particular
+        puzzle.
+        <br><br>
+        When displaying a large paragraph, avoid using justified or centre aligned text. Left/Right aligned block of
+        text is much easier to read due to the clear anchor point and an even spacing between the words.
+        <br><br>
+        Avoid Title case text for any labels longer than a couple words (Title Case Is When Every Word Starts With A
+        Capital Letter Like This). and if you are thinking about using UPPERCASE to commucate yelling, or just a
+        highlight, not all alphabet has different casing for each letter! Consider using <b>Bold</b> or
+        something different (but again, try not to rely solely on colours!)
+        <br><br>
+        And lastly, try to keep your lines no longer than 80 characters long (or around 40 if your language doesn't have
+        space between words or are full-width glyphs like Japanese, Korean and Chinese). Long lines can break the
+        player's neck trying to read the whole sentence!
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div id="myModal" class="modal">
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <div class="scrollToTop" id="scrollToTop">
+    <img class="toTopImg" src="img/ArrowUp.png" alt="Go to Top" />
+  </div>
+
+  <div class="footer">2024 | Danilo Enju | All content and trademarks are property of their respective owners.</div>
+
+</body>
+<script src="js/preloader.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/scrollTrigger.js"></script>
+
+</html>

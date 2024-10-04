@@ -19,7 +19,7 @@
 body {
   font-family: 'Noto Sans Mono', monospace;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: var(--font-description);
   color: var(--color-text-white);
   background: var(--color-bg-dark);
@@ -33,6 +33,12 @@ body {
   width: auto;
   height: auto;
   object-fit: cover;
+}
+
+.imageContain {
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .bg-wrapper {
@@ -62,6 +68,7 @@ body {
 
 .header.active {
   padding: 0.5em 0.5em;
+  font-weight: 500;
   background-color: var(--color-bg-menu-sticky);
   transition: 0.3s all ease;
   z-index: 50;
@@ -88,6 +95,7 @@ body {
   text-align: center;
   font-size: var(--font-title);
   color: var(--color-text-accent);
+  font-weight: 500;
 }
 
 .bigTitle {
@@ -96,6 +104,7 @@ body {
   text-align: center;
   font-size: var(--font-title-large);
   color: var(--color-text-accent);
+  font-weight: 500;
 }
 
 .description {
@@ -111,6 +120,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 .dataRowLarge {
   margin-bottom: 0.5em;
   text-align: left;
@@ -121,20 +131,24 @@ body {
 
 .accentText {
   color: var(--color-text-accent);
+  font-weight: 500;
 }
 
 .accentTextFixed {
   color: var(--color-text-accent);
   display: inline-block;
+  font-weight: 500;
   min-width: 9em;
 }
 
 .dimText {
   color: var(--color-bg-light);
+  font-weight: 500;
 }
 
 .dimTextFixed {
   color: var(--color-bg-light);
+  font-weight: 500;
   display: inline-block;
   min-width: 9em;
 }
@@ -147,6 +161,7 @@ body {
 
 .linkTextHighlight {
   color: var(--color-text-accent);
+  font-weight: 500;
   text-decoration: none;
   cursor: default;
   flex: 1;
@@ -154,6 +169,14 @@ body {
 
 .textbox {
   max-width: 400px;
+  border: 32px solid transparent;
+  border-image: url("../img/panel.png");
+  border-image-slice: 30% fill;
+  padding: 0px 0px 10px 0px;
+}
+
+.textboxLarge {
+  max-width: 760px;
   border: 32px solid transparent;
   border-image: url("../img/panel.png");
   border-image-slice: 30% fill;
@@ -232,6 +255,13 @@ body {
     margin-bottom: 0px;
   }
 
+  .textbox {
+    max-width: 900px;
+    border: 32px solid transparent;
+    border-image: url("../img/panel.png");
+    border-image-slice: 30% fill;
+    padding: 0px 0px 10px 0px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -252,5 +282,13 @@ body {
 
   .dimTextFixed {
     min-width: 10em;
+  }
+
+  .textbox {
+    max-width: 900px;
+    border: 32px solid transparent;
+    border-image: url("../img/panel.png");
+    border-image-slice: 30% fill;
+    padding: 0px 0px 10px 0px;
   }
 }
