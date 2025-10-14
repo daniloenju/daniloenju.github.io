@@ -136,11 +136,19 @@ body {
   font-weight: 500;
 }
 
+.accentTextFlex {
+  color: var(--color-text-accent);
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+  flex: 1;
+}
+
 .accentTextFixed {
   color: var(--color-text-accent);
   display: inline-block;
   font-weight: 500;
-  min-width: 9em;
+  min-width: 10em;
 }
 
 .dimText {
@@ -152,7 +160,7 @@ body {
   color: var(--color-bg-light);
   font-weight: 500;
   display: inline-block;
-  min-width: 9em;
+  min-width: 10em;
 }
 
 .linkText {
