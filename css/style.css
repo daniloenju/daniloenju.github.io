@@ -148,7 +148,7 @@ body {
   color: var(--color-text-accent);
   display: inline-block;
   font-weight: 500;
-  min-width: 10em;
+  min-width: 12em;
 }
 
 .dimText {
@@ -160,7 +160,7 @@ body {
   color: var(--color-bg-light);
   font-weight: 500;
   display: inline-block;
-  min-width: 10em;
+  min-width: 12em;
 }
 
 .linkText {
