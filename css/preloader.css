@@ -1,38 +1,41 @@
-.preloader{
+.preloader {
     height: 110vh;
     margin-top: -5em;
     width: 100%;
-    background-color: var(--color-bg-dark);
+    background-color: var(--color-background);
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: fixed;
     z-index: 100;
-    opacity: 1;
-  }
-.preloader-fadeout
-{
+    opacity: 0.9;
+}
+
+.preloader-fadeout {
     animation-name: fadeout;
     animation-delay: 1s;
     animation-duration: 0.6s;
     pointer-events: none;
     animation-fill-mode: forwards;
 }
-.preloader-image
-{
+
+.preloader-image {
     animation-name: fadein;
     animation-duration: 0.6s;
 }
-  @keyframes fadeout {
-    0%{
-        opacity: 1;
+
+@keyframes fadeout {
+    0% {
+        opacity: 0.9;
     }
-    99%{
+
+    99% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
     }
-  }
+}

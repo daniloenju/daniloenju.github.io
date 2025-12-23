@@ -1,16 +1,18 @@
 :root {
-  --color-bg: #282328;
-  --color-bg-dark: #251f25;
-  --color-bg-light: #545c7e;
+  --color-background: #251f25;
+
   --color-text-white: #a3a29a;
-  --color-text-accent: #c56981;
   --color-text-link: #79b2ff;
-  --color-bg-menu: rgba(0, 0, 0, 0.15);
-  --color-bg-menu-sticky: rgba(22, 18, 16, 0.95);
-  --font-footer: 0.8em;
-  --font-title: 1.2em;
-  --font-title-large: 1.6em;
+  --color-dim: #545c7e;
+  --color-accent: #c56981;
+
+  --color-menu: rgba(0, 0, 0, 0.15);
+  --color-menu-sticky: rgba(22, 18, 16, 0.95);
+
+  --font-title: 2.0em;
+  --font-title-large: 2.4em;
   --font-description: 1.0em;
+  --font-footer: 0.8em;
 
   scroll-behavior: smooth;
 }
@@ -22,14 +24,14 @@ body {
   font-weight: 400;
   font-size: var(--font-description);
   color: var(--color-text-white);
-  background: var(--color-bg-dark);
+  background: var(--color-background);
   text-align: -webkit-center;
   text-align: -moz-center;
   margin: 0;
   padding-top: 3.5em;
 }
 
-.homeImage {
+.imageCover {
   width: auto;
   height: auto;
   object-fit: cover;
@@ -64,24 +66,16 @@ body {
   top: 0;
   width: 100%;
   padding: 1.0em 0.5em;
-  background-color: var(--color-bg-menu);
+  background-color: var(--color-menu);
   transition: 0.3s all ease;
 }
 
 .header.active {
   padding: 0.5em 0.5em;
   font-weight: 500;
-  background-color: var(--color-bg-menu-sticky);
+  background-color: var(--color-menu-sticky);
   transition: 0.3s all ease;
   z-index: 50;
-}
-
-.link-wrapper {
-  align-items: center;
-  max-width: 760px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
 }
 
 .modal-wrapper {
@@ -93,24 +87,26 @@ body {
 }
 
 .title {
-  margin-bottom: 1.0em;
+  margin-bottom: 0.5em;
   text-align: center;
+  font-family: "Jersey 10";
   font-size: var(--font-title);
-  color: var(--color-text-accent);
+  color: var(--color-accent);
   font-weight: 500;
 }
 
 .bigTitle {
   margin-top: 0.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.0em;
+  font-family: "Jersey 10";
   text-align: center;
   font-size: var(--font-title-large);
-  color: var(--color-text-accent);
+  color: var(--color-accent);
   font-weight: 500;
 }
 
 .description {
-  line-height: 1.5em;
+  line-height: 1.6em;
   text-align: left;
   font-size: var(--font-description);
 }
@@ -132,35 +128,35 @@ body {
 }
 
 .accentText {
-  color: var(--color-text-accent);
+  color: var(--color-accent);
   font-weight: 500;
-}
-
-.accentTextFlex {
-  color: var(--color-text-accent);
-  display: inline-block;
-  font-weight: 500;
-  margin-bottom: 0.3em;
-  flex: 1;
 }
 
 .accentTextFixed {
-  color: var(--color-text-accent);
+  color: var(--color-accent);
   display: inline-block;
   font-weight: 500;
   min-width: 12em;
 }
 
 .dimText {
-  color: var(--color-bg-light);
+  color: var(--color-dim);
   font-weight: 500;
 }
 
 .dimTextFixed {
-  color: var(--color-bg-light);
+  color: var(--color-dim);
   font-weight: 500;
   display: inline-block;
   min-width: 12em;
+}
+
+.link-wrapper {
+  align-items: center;
+  max-width: 760px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .linkText {
@@ -170,7 +166,7 @@ body {
 }
 
 .linkTextHighlight {
-  color: var(--color-text-accent);
+  color: var(--color-accent);
   font-weight: 500;
   text-decoration: none;
   cursor: default;
@@ -186,27 +182,11 @@ body {
 }
 
 .textboxLarge {
-  max-width: 760px;
-  border: 32px solid transparent;
-  border-image: url("../img/panel.png");
-  border-image-slice: 30% fill;
-  padding: 0px 0px 10px 0px;
-}
-
-.curriculum {
-  max-width: 740px;
+  max-width: 800px;
   border: 32px solid transparent;
   border-image: url("../img/panel.png");
   border-image-slice: 30% fill;
   padding: 0px 10px 10px 10px;
-}
-
-.modalTriggerContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .scrollToTop {
@@ -254,32 +234,9 @@ body {
     flex-direction: column;
   }
 
-  .homeImage {
+  .imageCover {
     width: 100%;
     max-width: 500px;
-  }
-
-  .modalTriggerContainer {
-    flex-direction: column;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .textbox {
-    max-width: 900px;
-    border: 32px solid transparent;
-    border-image: url("../img/panel.png");
-    border-image-slice: 30% fill;
-    padding: 0px 0px 10px 0px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  :root {
-    --font-footer: 0.7em;
-    --font-title: 1.0em;
-    --font-title-large: 1.1em;
-    --font-description: 0.9em;
   }
 
   .dataRow {
@@ -287,11 +244,13 @@ body {
   }
 
   .accentTextFixed {
-    min-width: 10em;
+    min-width: none;
+    flex: 1;
   }
 
   .dimTextFixed {
-    min-width: 10em;
+    min-width: none;
+    flex: 1;
   }
 
   .textbox {
