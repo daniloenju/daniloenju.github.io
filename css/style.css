@@ -226,6 +226,10 @@ body {
 
 @media only screen and (max-width: 1000px) {
 
+  :root {
+    --font-description: 0.9em;
+  }
+
   .bg-wrapper,
   .bg-wrapper-reverse {
     padding: 20px;
@@ -244,12 +248,12 @@ body {
   }
 
   .accentTextFixed {
-    min-width: none;
+    min-width: 0;
     flex: 1;
   }
 
   .dimTextFixed {
-    min-width: none;
+    min-width: 0;
     flex: 1;
   }
 
