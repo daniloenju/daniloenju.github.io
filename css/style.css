@@ -241,6 +241,12 @@ body {
     font-weight: 500;
   }
 
+  .accentTextFixed,
+  .dimTextFixed {
+    min-width: 10em;
+  }
+
+
   .bg-wrapper,
   .bg-wrapper-reverse {
     padding: 10px;
