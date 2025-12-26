@@ -230,9 +230,20 @@ body {
     --font-description: 0.9em;
   }
 
+  .title,
+  .bigTitle {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-family: "Jersey 10";
+    font-size: var(--font-title);
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+
   .bg-wrapper,
   .bg-wrapper-reverse {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -243,25 +254,12 @@ body {
     max-width: 500px;
   }
 
-  .dataRow {
-    margin-bottom: 0.5em;
-  }
-
-  .accentTextFixed {
-    min-width: 0;
-    flex: 1;
-  }
-
-  .dimTextFixed {
-    min-width: 0;
-    flex: 1;
-  }
-
-  .textbox {
+  .textbox,
+  .textboxLarge {
     max-width: 900px;
     border: 32px solid transparent;
     border-image: url("../img/panel.png");
     border-image-slice: 30% fill;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
