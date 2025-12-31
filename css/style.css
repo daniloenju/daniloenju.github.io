@@ -10,8 +10,9 @@
   --color-menu-sticky: rgba(22, 18, 16, 0.95);
   --color-menu-hamburger: linear-gradient(180deg, rgba(36, 35, 51, 0.95) 60%, rgb(41, 39, 73) 100%);
 
-  --font-title: 2.0em;
-  --font-title-large: 2.4em;
+  --font-title: 1.6em;
+  --font-title-medium: 1.3em;
+  --font-title-large: 2.0em;
   --font-description: 1.0em;
   --font-footer: 0.8em;
   --font-hamburger: 1.4em;
@@ -109,8 +110,16 @@ body {
 .title {
   margin-bottom: 0.5em;
   text-align: center;
-  font-family: "Jersey 10";
+  font-family: "New Rocker";
   font-size: var(--font-title);
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.rowTitle {
+  text-align: center;
+  font-family: "New Rocker";
+  font-size: var(--font-title-medium);
   color: var(--color-accent);
   font-weight: 500;
 }
@@ -118,7 +127,7 @@ body {
 .bigTitle {
   margin-top: 0.5em;
   margin-bottom: 1.0em;
-  font-family: "Jersey 10";
+  font-family: "New Rocker";
   text-align: center;
   font-size: var(--font-title-large);
   color: var(--color-accent);
@@ -248,14 +257,16 @@ body {
 
   :root {
     --font-description: 0.9em;
+    --font-title: 1.5em;
   }
 
   .title,
-  .bigTitle {
+  .bigTitle,
+  .rowTitle {
     margin-top: 0;
     margin-bottom: 0.5em;
     text-align: center;
-    font-family: "Jersey 10";
+    font-family: "New Rocker";
     font-size: var(--font-title);
     color: var(--color-accent);
     font-weight: 500;
