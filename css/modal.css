@@ -229,6 +229,12 @@
     height: auto;
   }
 
+  .modalNext,
+  .modalBack,
+  .modalClose {
+    display: none;
+  }
+
   .modaltrigger,
   .modaltriggerMedium,
   .modaltriggerLarge,
