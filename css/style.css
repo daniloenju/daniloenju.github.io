@@ -1,25 +1,20 @@
 :root {
   --color-background: #251f25;
-
   --color-text-white: #a3a29a;
   --color-text-link: #79b2ff;
   --color-dim: #545c7e;
   --color-accent: #c56981;
-
   --color-menu: rgba(0, 0, 0, 0.15);
   --color-menu-sticky: rgba(22, 18, 16, 0.95);
   --color-menu-hamburger: linear-gradient(180deg, rgba(36, 35, 51, 0.95) 60%, rgb(41, 39, 73) 100%);
-
   --font-title: 1.6em;
   --font-title-medium: 1.3em;
   --font-title-large: 2.0em;
   --font-description: 1.0em;
   --font-footer: 0.8em;
   --font-hamburger: 1.4em;
-
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: 'Noto Sans Mono', monospace;
