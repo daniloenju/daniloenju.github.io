@@ -264,8 +264,8 @@ body {
     margin-top: 0;
     margin-bottom: 0.5em;
     text-align: center;
-    font-family: "New Rocker";
-    font-size: var(--font-title);
+    font-family: "Jersey 10", sans-serif;
+    font-size: var(--font-title-medium);
     color: var(--color-accent);
     font-weight: 500;
   }
