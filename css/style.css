@@ -6,7 +6,7 @@
   --color-accent: #c56981;
   --color-menu: rgba(0, 0, 0, 0.15);
   --color-menu-sticky: rgba(22, 18, 16, 0.95);
-  --color-menu-hamburger: linear-gradient(180deg, rgba(36, 35, 51, 0.95) 60%, rgb(41, 39, 73) 100%);
+  --color-menu-hamburger: rgba(22, 18, 16, 0.95);
   --font-title: 2.4em;
   --font-title-medium: 2.4em;
   --font-title-large: 3.2em;
